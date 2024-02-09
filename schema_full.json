@@ -1,0 +1,486 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Generated schema for Root",
+  "type": "object",
+  "properties": {
+    "supportingTracks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "notes": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "midi": {
+                  "type": "number"
+                },
+                "time": {
+                  "type": "number"
+                },
+                "velocity": {
+                  "type": "number"
+                },
+                "duration": {
+                  "type": "number"
+                }
+              },
+              "required": ["midi", "time", "velocity", "duration"]
+            }
+          },
+          "myInstrument": {
+            "type": "number"
+          },
+          "theirInstrument": {
+            "type": "number"
+          }
+        },
+        "required": ["notes", "myInstrument", "theirInstrument"]
+      }
+    },
+    "start_time": {
+      "type": "number"
+    },
+    "song_length": {
+      "type": "number"
+    },
+    "resolution": {
+      "type": "number"
+    },
+    "tempos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "bpm": {
+            "type": "number"
+          },
+          "ticks": {
+            "type": "number"
+          },
+          "time": {
+            "type": "number"
+          }
+        },
+        "required": ["bpm", "ticks", "time"]
+      }
+    },
+    "keySignatures": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "key": {
+            "type": "string"
+          },
+          "scale": {
+            "type": "string"
+          },
+          "ticks": {
+            "type": "number"
+          }
+        },
+        "required": ["key", "scale", "ticks"]
+      }
+    },
+    "timeSignatures": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "ticks": {
+            "type": "number"
+          },
+          "timeSignature": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            }
+          },
+          "measures": {
+            "type": "number"
+          }
+        },
+        "required": ["ticks", "timeSignature", "measures"]
+      }
+    },
+    "measures": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "time": {
+            "type": "number"
+          },
+          "timeSignature": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            }
+          },
+          "ticksPerMeasure": {
+            "type": "number"
+          },
+          "ticksStart": {
+            "type": "number"
+          },
+          "totalTicks": {
+            "type": "number"
+          },
+          "type": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "time",
+          "timeSignature",
+          "ticksPerMeasure",
+          "ticksStart",
+          "totalTicks",
+          "type"
+        ]
+      }
+    },
+    "tracksV2": {
+      "type": "object",
+      "properties": {
+        "right": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "direction": {
+                "type": "string"
+              },
+              "time": {
+                "type": "number"
+              },
+              "timeEnd": {
+                "type": "number"
+              },
+              "timeSignature": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                }
+              },
+              "notes": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "note": {
+                      "type": "number"
+                    },
+                    "durationTicks": {
+                      "type": "number"
+                    },
+                    "noteOffVelocity": {
+                      "type": "number"
+                    },
+                    "ticksStart": {
+                      "type": "number"
+                    },
+                    "velocity": {
+                      "type": "number"
+                    },
+                    "measureBars": {
+                      "type": "number"
+                    },
+                    "duration": {
+                      "type": "number"
+                    },
+                    "noteName": {
+                      "type": "string"
+                    },
+                    "octave": {
+                      "type": "number"
+                    },
+                    "notePitch": {
+                      "type": "string"
+                    },
+                    "start": {
+                      "type": "number"
+                    },
+                    "end": {
+                      "type": "number"
+                    },
+                    "noteLengthType": {
+                      "type": "string"
+                    },
+                    "group": {
+                      "type": "number"
+                    },
+                    "measureInd": {
+                      "type": "number"
+                    },
+                    "noteMeasureInd": {
+                      "type": "number"
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "finger": {
+                      "type": "number"
+                    },
+                    "smp": {}
+                  },
+                  "required": [
+                    "note",
+                    "durationTicks",
+                    "noteOffVelocity",
+                    "ticksStart",
+                    "velocity",
+                    "measureBars",
+                    "duration",
+                    "noteName",
+                    "octave",
+                    "notePitch",
+                    "start",
+                    "end",
+                    "noteLengthType",
+                    "group",
+                    "measureInd",
+                    "noteMeasureInd",
+                    "id",
+                    "finger",
+                    "smp"
+                  ]
+                }
+              },
+              "max": {
+                "type": "number"
+              },
+              "min": {
+                "type": "number"
+              },
+              "measureTicksStart": {
+                "type": "number"
+              },
+              "measureTicksEnd": {
+                "type": "number"
+              },
+              "rests": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "time": {
+                      "type": "number"
+                    },
+                    "noteLengthType": {
+                      "type": "string"
+                    }
+                  },
+                  "required": ["time", "noteLengthType"]
+                }
+              }
+            },
+            "required": [
+              "direction",
+              "time",
+              "timeEnd",
+              "timeSignature",
+              "notes",
+              "max",
+              "min",
+              "measureTicksStart",
+              "measureTicksEnd",
+              "rests"
+            ]
+          }
+        },
+        "left": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "direction": {
+                "type": "string"
+              },
+              "time": {
+                "type": "number"
+              },
+              "timeEnd": {
+                "type": "number"
+              },
+              "timeSignature": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                }
+              },
+              "notes": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "note": {
+                      "type": "number"
+                    },
+                    "durationTicks": {
+                      "type": "number"
+                    },
+                    "noteOffVelocity": {
+                      "type": "number"
+                    },
+                    "ticksStart": {
+                      "type": "number"
+                    },
+                    "velocity": {
+                      "type": "number"
+                    },
+                    "measureBars": {
+                      "type": "number"
+                    },
+                    "duration": {
+                      "type": "number"
+                    },
+                    "noteName": {
+                      "type": "string"
+                    },
+                    "octave": {
+                      "type": "number"
+                    },
+                    "notePitch": {
+                      "type": "string"
+                    },
+                    "start": {
+                      "type": "number"
+                    },
+                    "end": {
+                      "type": "number"
+                    },
+                    "noteLengthType": {
+                      "type": "string"
+                    },
+                    "group": {
+                      "type": "number"
+                    },
+                    "measureInd": {
+                      "type": "number"
+                    },
+                    "noteMeasureInd": {
+                      "type": "number"
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "finger": {},
+                    "smp": {}
+                  },
+                  "required": [
+                    "note",
+                    "durationTicks",
+                    "noteOffVelocity",
+                    "ticksStart",
+                    "velocity",
+                    "measureBars",
+                    "duration",
+                    "noteName",
+                    "octave",
+                    "notePitch",
+                    "start",
+                    "end",
+                    "noteLengthType",
+                    "group",
+                    "measureInd",
+                    "noteMeasureInd",
+                    "id",
+                    "finger",
+                    "smp"
+                  ]
+                }
+              },
+              "max": {
+                "type": "number"
+              },
+              "min": {
+                "type": "number"
+              },
+              "measureTicksStart": {
+                "type": "number"
+              },
+              "measureTicksEnd": {
+                "type": "number"
+              },
+              "rests": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "time": {
+                      "type": "number"
+                    },
+                    "noteLengthType": {
+                      "type": "string"
+                    }
+                  },
+                  "required": ["time", "noteLengthType"]
+                }
+              }
+            },
+            "required": [
+              "direction",
+              "time",
+              "timeEnd",
+              "timeSignature",
+              "notes",
+              "max",
+              "min",
+              "measureTicksStart",
+              "measureTicksEnd",
+              "rests"
+            ]
+          }
+        }
+      },
+      "required": ["right", "left"]
+    },
+    "accompanyingInstruments": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      }
+    },
+    "accompanyingChannels": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      }
+    },
+    "sections": {
+      "type": "array",
+      "items": {}
+    },
+    "positionGroups": {
+      "type": "array",
+      "items": {}
+    },
+    "technicalGroups": {
+      "type": "array",
+      "items": {}
+    },
+    "maxSimplification": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "supportingTracks",
+    "start_time",
+    "song_length",
+    "resolution",
+    "tempos",
+    "keySignatures",
+    "timeSignatures",
+    "measures",
+    "tracksV2",
+    "accompanyingInstruments",
+    "accompanyingChannels",
+    "sections",
+    "positionGroups",
+    "technicalGroups",
+    "maxSimplification"
+  ]
+}

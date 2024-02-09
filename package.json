@@ -1,0 +1,16 @@
+{
+  "name": "piano",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "patchfingers.ts",
+  "scripts": {
+    "start": "esno .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "esno": "^4.0.0"
+  }
+}
